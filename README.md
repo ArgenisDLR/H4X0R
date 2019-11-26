@@ -8,3 +8,9 @@ a hacker news reader app built with SwiftUI
 <img src="images/IMG_0653.PNG" width="200"/>              <img src="images/IMG_0656.PNG" width="200"/>
 
 <img src="images/IMG_0654.PNG" width="200"/>              <img src="images/IMG_0657.PNG" width="200"/>
+
+### Tech Stack
+
+- SwiftUI
+- URLSession
+- Webkit
