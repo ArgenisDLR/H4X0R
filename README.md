@@ -1,4 +1,4 @@
-# H4X0R 
+# Hacker News 
 a hacker news reader app built with SwiftUI
 
 
