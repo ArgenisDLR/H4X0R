@@ -13,6 +13,7 @@ struct ContentView: View {
     @ObservedObject var networkManager = NetworkManager()
     
     var body: some View {
+        
         NavigationView {
             List(networkManager.posts) { post in
                 NavigationLink(destination: DetailView(url: post.url)) {
@@ -36,8 +37,3 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-//let posts = [
-//    Post(id: "1", title: "Helo"),
-//    Post(id: "2", title: "Hello"),
-//    Post(id: "3", title: "Heloo")
-//]
