@@ -33,9 +33,4 @@ class NetworkManager: ObservableObject {
             task.resume()
         }
     }
-    
-    func parseJSON(urlString: String) {
-        
-        
-    }
 }
