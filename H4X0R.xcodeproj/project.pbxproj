@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D57D3ED26AC549B003DD4C8 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D57D3EC26AC549B003DD4C8 /* DateFormatter.swift */; };
+		4D57D3F126AC5E60003DD4C8 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D57D3F026AC5E60003DD4C8 /* FeedView.swift */; };
+		4D57D40626AC6030003DD4C8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D57D40526AC6030003DD4C8 /* SettingsView.swift */; };
+		4D57D40826AC603D003DD4C8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D57D40726AC603D003DD4C8 /* Constants.swift */; };
+		4D57D40A26AC621C003DD4C8 /* SystemThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D57D40926AC621C003DD4C8 /* SystemThemeManager.swift */; };
+		4D661D1826AC6CCA00A79E5D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D661D1726AC6CCA00A79E5D /* Theme.swift */; };
 		4DB1526B238AAA0300538716 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB1526A238AAA0300538716 /* AppDelegate.swift */; };
 		4DB1526D238AAA0300538716 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB1526C238AAA0300538716 /* SceneDelegate.swift */; };
 		4DB1526F238AAA0300538716 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB1526E238AAA0300538716 /* ContentView.swift */; };
@@ -20,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D57D3EC26AC549B003DD4C8 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		4D57D3F026AC5E60003DD4C8 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		4D57D40526AC6030003DD4C8 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsView.swift; path = ../../../Bookie/Bookie/Views/SettingsView.swift; sourceTree = "<group>"; };
+		4D57D40726AC603D003DD4C8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../../../Bookie/Bookie/Extensions/Constants.swift; sourceTree = "<group>"; };
+		4D57D40926AC621C003DD4C8 /* SystemThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SystemThemeManager.swift; path = ../../../Bookie/Bookie/Extensions/SystemThemeManager.swift; sourceTree = "<group>"; };
+		4D661D1626AC6CBC00A79E5D /* SystemThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemThemeManager.swift; sourceTree = "<group>"; };
+		4D661D1726AC6CCA00A79E5D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		4DB15267238AAA0300538716 /* H4X0R.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = H4X0R.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB1526A238AAA0300538716 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DB1526C238AAA0300538716 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +58,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D57D3EB26AC5486003DD4C8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4D57D40726AC603D003DD4C8 /* Constants.swift */,
+				4D57D3EC26AC549B003DD4C8 /* DateFormatter.swift */,
+				4D57D40926AC621C003DD4C8 /* SystemThemeManager.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4D661D1526AC6CB300A79E5D /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				4D661D1626AC6CBC00A79E5D /* SystemThemeManager.swift */,
+				4D661D1726AC6CCA00A79E5D /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
 		4DB1525E238AAA0200538716 = {
 			isa = PBXGroup;
 			children = (
@@ -66,8 +98,10 @@
 			children = (
 				4DB15283238BC41B00538716 /* Views */,
 				4DB15280238B546C00538716 /* Models */,
-				4DB1526A238AAA0300538716 /* AppDelegate.swift */,
 				4DB1526C238AAA0300538716 /* SceneDelegate.swift */,
+				4D57D3EB26AC5486003DD4C8 /* Extensions */,
+				4D661D1526AC6CB300A79E5D /* Theme */,
+				4DB1526A238AAA0300538716 /* AppDelegate.swift */,
 				4DB15270238AAA0500538716 /* Assets.xcassets */,
 				4DB15275238AAA0500538716 /* LaunchScreen.storyboard */,
 				4DB15278238AAA0500538716 /* Info.plist */,
@@ -98,7 +132,9 @@
 			children = (
 				4DB15284238BC42600538716 /* DetailView.swift */,
 				4DB1526E238AAA0300538716 /* ContentView.swift */,
+				4D57D3F026AC5E60003DD4C8 /* FeedView.swift */,
 				4DC1D2D524A0343A00AAEDFA /* WebView.swift */,
+				4D57D40526AC6030003DD4C8 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -130,7 +166,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "argenis delarosa";
 				TargetAttributes = {
 					4DB15266238AAA0300538716 = {
@@ -174,13 +210,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D57D3F126AC5E60003DD4C8 /* FeedView.swift in Sources */,
+				4D57D3ED26AC549B003DD4C8 /* DateFormatter.swift in Sources */,
 				4DB15282238B548300538716 /* PostData.swift in Sources */,
 				4DB15285238BC42600538716 /* DetailView.swift in Sources */,
+				4D661D1826AC6CCA00A79E5D /* Theme.swift in Sources */,
 				4DB1527F238B4CCF00538716 /* NetworkManager.swift in Sources */,
 				4DB1526B238AAA0300538716 /* AppDelegate.swift in Sources */,
 				4DB1526D238AAA0300538716 /* SceneDelegate.swift in Sources */,
+				4D57D40626AC6030003DD4C8 /* SettingsView.swift in Sources */,
 				4DB1526F238AAA0300538716 /* ContentView.swift in Sources */,
 				4DC1D2D624A0343A00AAEDFA /* WebView.swift in Sources */,
+				4D57D40A26AC621C003DD4C8 /* SystemThemeManager.swift in Sources */,
+				4D57D40826AC603D003DD4C8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +266,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -284,6 +327,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

@@ -8,29 +8,36 @@
 
 import SwiftUI
 
+@available(iOS 14.0, *)
+@available(iOS 14.0, *)
 struct ContentView: View {
     
-    @ObservedObject var networkManager = NetworkManager()
+    @AppStorage("darkModeEnabled") private var darkModeEnabled = false
+    @AppStorage("systemThemeEnabled") private var systemThemeEnabled = false
     
     var body: some View {
         
-        NavigationView {
-            List(networkManager.posts) { post in
-                NavigationLink(destination: DetailView(url: post.url)) {
-                    HStack {
-                        Text(String(post.points))
-                        Text(post.title)
-                    }
+        TabView {
+            
+            FeedView()
+                
+                .tabItem {
+                    Image(systemName: "newspaper")
+                    Text("News")
                 }
-            }
-            .navigationBarTitle("Hacker News")
-        }
-        .onAppear {
-            self.networkManager.fetchData()
+            
+            SettingsView(darkModeEnabled: $darkModeEnabled, systemThemeEnabled: $systemThemeEnabled)
+                
+                .tabItem {
+                    Image(systemName: "gear")
+                    Text("Settings")
+                }
         }
     }
 }
 
+@available(iOS 14.0, *)
+@available(iOS 14.0, *)
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
